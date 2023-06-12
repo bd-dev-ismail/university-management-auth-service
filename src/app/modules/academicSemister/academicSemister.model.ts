@@ -10,10 +10,11 @@ import {
 } from './academicSemister.constant';
 import ApiError from '../../../Erros/ApiError';
 import httpStatus from 'http-status';
+
 const academicSemisterSchema = new Schema<IAcademicSemister>(
   {
     title: { type: String, required: true, enum: academicSemisterTitles },
-    year: { type: Number, required: true },
+    year: { type: String, required: true },
     code: { type: String, required: true, enum: academicSemisterCodes },
     startMonth: { type: String, required: true, enum: academicSemisterMonths },
     endMonth: { type: String, required: true, enum: academicSemisterMonths },

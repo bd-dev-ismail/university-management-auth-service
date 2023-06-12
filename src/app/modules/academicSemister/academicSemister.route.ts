@@ -11,4 +11,14 @@ router.post(
   AcademicSemiserController.createSemister
 );
 
+router.get('/:id', AcademicSemiserController.getSingleSemister);
+
+router.patch(
+  '/:id',
+  validateRequest(AcademicSemisterValidation.updateAcademicSemisterZodSchema),
+  AcademicSemiserController.updateSemister
+);
+router.delete('/:id', AcademicSemiserController.deleteSemsiter);
+router.get('/', AcademicSemiserController.getAllSemister);
+
 export const AcademicSemisterRoutes = router;
