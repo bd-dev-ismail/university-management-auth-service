@@ -10,5 +10,7 @@ export default {
   // eslint-disable-next-line no-undef
   database_url: process.env.DATABASE_URL,
   // eslint-disable-next-line no-undef
-  default_user_password: process.env.DEFAULT_USER_PASS,
+  default_student_password: process.env.DEFAULT_STUDENT_PASS,
+  default_faculty_password: process.env.DEFAULT_FACULTY_PASS,
+  default_admin_password: process.env.DEFAULT_ADMIN_PASS,
 };

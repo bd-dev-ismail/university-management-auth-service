@@ -5,6 +5,10 @@ import globalErrorHandler from './app/middlewares/globalErrorHandler';
 
 import routers from './app/routes';
 import httpStatus from 'http-status';
+// import {
+//   genrateFacultyId,
+//   genrateStudentId,
+// } from './app/modules/user/user.utlis';
 // import ApiError from './Erros/ApiError'
 const app: Application = express();
 
@@ -46,5 +50,13 @@ app.use((req: Request, res: Response, next: NextFunction) => {
   });
   next();
 });
-
+// const academicSemsiter = {
+//   year: '2023',
+//   code: '01',
+// };
+// const testId = async () => {
+//   const testId = await genrateFacultyId();
+//   console.log(testId);
+// };
+// testId();
 export default app;
