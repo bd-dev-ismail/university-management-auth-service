@@ -1,0 +1,2 @@
+Wed Jun 28 2023 6:43:13 } [PH] error: E11000 duplicate key error collection: university-management.students index: contactNo_1 dup key: { contactNo: "user_4" }
+Wed Jun 28 2023 6:44:10 } [PH] error: Cannot populate path `student.academicSemsiter` because it is not in your schema. Set the `strictPopulate` option to false to override.

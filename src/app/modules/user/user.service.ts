@@ -25,6 +25,7 @@ const createStudent = async (
   if (!user.password) {
     user.password = config.default_student_password as string; //using type aias for password must be string
   }
+
   //set role
   user.role = 'student';
 
@@ -93,6 +94,7 @@ const createFaculty = async (
   if (!user.password) {
     user.password = config.default_faculty_password as string;
   }
+
   // set role
   user.role = 'faculty';
 
@@ -153,6 +155,7 @@ const createAdmin = async (
   if (!user.password) {
     user.password = config.default_admin_password as string;
   }
+
   // set role
   user.role = 'admin';
 
