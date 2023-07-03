@@ -7,7 +7,10 @@ const UserSchema = new Schema<IUser>(
   {
     id: { type: String, required: true, unique: true },
     role: { type: String, required: true },
-    password: { type: String, required: true },
+    password: { type: String, required: true, select: 0 },
+
+    needsPasswordChange: { type: Boolean, default: true },
+
     student: {
       type: Schema.Types.ObjectId,
       ref: 'Student',
